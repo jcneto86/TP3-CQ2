@@ -47,6 +47,8 @@ public class TraducteurMorseConcreteTest {
         TraducteurMorse tmc = new TraducteurMorseConcrete();
         assertEquals("JOAO CARLOS",
                 tmc.nettoyerAlpha("João Carlos"));
+        assertEquals("JOAOHOTMAIL.COM",
+                tmc.nettoyerAlpha("joao@hotmail.com"));
         assertEquals("MEME CHOSE",
                 tmc.nettoyerAlpha("même chose"));
         assertEquals("LECRITURE DES UNITES DE MESURE",

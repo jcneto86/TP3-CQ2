@@ -1,13 +1,14 @@
 package com.jcneto.tp3_cq;
 
 
-
 public class TraducteurMorseStub implements TraducteurMorse {
 
     @Override
     public String toAlpha(String morse) {
         // Scénario 1
-        if (morse.equals("."))
+        if (morse.equals(" "))
+            return " ";
+        else if (morse.equals("."))
             return "E";
         else if (morse.equals(".."))
             return "I";
@@ -21,18 +22,16 @@ public class TraducteurMorseStub implements TraducteurMorse {
             return "5";
         else if (morse.equals("..... ."))
             return "5E";
-        // Scénario 2
-        else if (morse.equals("....."))
-            return "";
         return "";
     }
 
     @Override
     public String toMorse(String alpha) {
+        alpha = nettoyerAlpha(alpha);
         if (alpha.equals("J"))
-            return ".---";
+            return ".--- ";
         else if (alpha.equals("O"))
-            return "---";
+            return "--- ";
         else if (alpha.equals("A"))
             return ".-";
         else if (alpha.equals("C"))
