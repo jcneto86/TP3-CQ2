@@ -2,7 +2,7 @@ package com.jcneto.tp3_cq;
 
 
 
-public class TraductuerMorseStub implements TraducteurMorse {
+public class TraducteurMorseStub implements TraducteurMorse {
 
     @Override
     public String toAlpha(String morse) {
@@ -19,7 +19,7 @@ public class TraductuerMorseStub implements TraducteurMorse {
             return "5";
         else if (morse.equals("..... "))
             return "5";
-        else if (morse.equals("...... ."))
+        else if (morse.equals("..... ."))
             return "5E";
         // Scénario 2
         else if (morse.equals("....."))
@@ -29,7 +29,22 @@ public class TraductuerMorseStub implements TraducteurMorse {
 
     @Override
     public String toMorse(String alpha) {
-        String morseToReturne;
+        if (alpha.equals("J"))
+            return ".---";
+        else if (alpha.equals("O"))
+            return "---";
+        else if (alpha.equals("A"))
+            return ".-";
+        else if (alpha.equals("C"))
+            return "-.-. ";
+        else if (alpha.equals("R"))
+            return ".-. ";
+        else if (alpha.equals("L"))
+            return ".-.. ";
+        else if (alpha.equals("S"))
+            return "... ";
+        else if (alpha.equals(" "))
+            return "/ ";
         return "";
     }
 
@@ -42,7 +57,7 @@ public class TraductuerMorseStub implements TraducteurMorse {
 
     @Override
     public String getNomProgrammeurs() {
-        return "";
+        return "C'est un Stub !!! 😱😱😱😱";
     }
 
 }
