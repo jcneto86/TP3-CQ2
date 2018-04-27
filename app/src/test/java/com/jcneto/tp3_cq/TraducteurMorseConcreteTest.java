@@ -1,4 +1,7 @@
 package com.jcneto.tp3_cq;
+/*
+ Classe creé pour teste le TraducteurMorseConcrete
+*/
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -6,6 +9,9 @@ import static org.junit.Assert.*;
 public class TraducteurMorseConcreteTest {
 
     /**
+     * toAlphaTest()
+     * Fonction pour tester la méthode toAlpha de la classe TraducteurMorseConcrete.
+     *
      *
      */
     @Test
@@ -24,6 +30,8 @@ public class TraducteurMorseConcreteTest {
     }
 
     /**
+     * toMorseTest()
+     *  Fonction pour tester la méthode toMorse de la classe TraducteurMorseConcrete.
      *
      */
     @Test
@@ -40,6 +48,8 @@ public class TraducteurMorseConcreteTest {
     }
 
     /**
+     * nettoyerAlphaTest()
+     *  Fonction pour tester la méthode nettoyerAlpha de la classe TraducteurMorseConcrete.
      *
      */
     @Test
@@ -61,6 +71,8 @@ public class TraducteurMorseConcreteTest {
     }
 
     /**
+     * getNomProgrammeursTest()
+     *  Fonction pour tester la méthode getNomProgrammeurs de la classe TraducteurMorseConcrete.
      *
      */
     @Test

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String morse = "";
     private String alpha = "";
-    private final TraducteurMorse traducteurMorse = new TraducteurMorseConcrete();
+    private final TraducteurMorse traducteurMorse = new TraducteurMorseStub();
     private AlertDialog alert;
 
     @Override

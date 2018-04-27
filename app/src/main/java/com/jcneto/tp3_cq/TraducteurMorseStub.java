@@ -30,20 +30,26 @@ public class TraducteurMorseStub implements TraducteurMorse {
         alpha = nettoyerAlpha(alpha);
         if (alpha.equals("J"))
             return ".--- ";
-        else if (alpha.equals("O"))
-            return "--- ";
-        else if (alpha.equals("A"))
-            return ".-";
-        else if (alpha.equals("C"))
-            return "-.-. ";
-        else if (alpha.equals("R"))
-            return ".-. ";
-        else if (alpha.equals("L"))
-            return ".-.. ";
-        else if (alpha.equals("S"))
-            return "... ";
-        else if (alpha.equals(" "))
-            return "/ ";
+        else if (alpha.equals("JO"))
+            return ".--- ---";
+        else if (alpha.equals("JOA"))
+            return ".--- --- .-";
+        else if (alpha.equals("JOAO"))
+            return ".--- --- .- ---";
+        else if (alpha.equals("JOAO "))
+            return ".--- --- .- --- /";
+        else if (alpha.equals("JOAO C"))
+            return ".--- --- .- --- / -.-.";
+        else if (alpha.equals("JOAO CA"))
+            return ".--- --- .- --- / -.-. .-";
+        else if (alpha.equals("JOAO CAR"))
+            return ".--- --- .- --- / -.-. .- .-.";
+        else if (alpha.equals("JOAO CARL"))
+            return ".--- --- .- --- / -.-. .- .-. .-..";
+        else if (alpha.equals("JOAO CARLO"))
+            return ".--- --- .- --- / -.-. .- .-. .-.. ---";
+        else if (alpha.equals("JOAO CARLOS"))
+            return ".--- --- .- --- / -.-. .- .-. .-.. --- ...";
         return "";
     }
 
